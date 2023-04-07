@@ -1,0 +1,25 @@
+{
+    "name": "Twitter Rumour Detection",
+    "version": "1.0.1",
+    "description": "This browser extension allows users to detect rumours on Twitter.",
+    "manifest_version": 3,
+    "author": "Andrej Jovanovic",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Twitter Rumour Detection",
+        "default_icon": "128.png"
+    },
+    "icons": {
+        "128": "128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions": [
+        "http://127.0.0.1:8080/inference"
+    ],
+    "permissions": [
+        "declarativeContent",
+        "activeTab"
+    ]
+}
