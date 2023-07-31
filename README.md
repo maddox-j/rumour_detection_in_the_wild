@@ -24,11 +24,6 @@ The project structure is the following:
  ┃ ┣ 📜server.py
  ┃ ┣ 📜user_study_sever.py
  ┃ ┗ 📜twitter_inference.py
- ┣ 📂notebooks
- ┃ ┣ 📂generated_figures
- ┃ ┣ 📜graph_generator.ipynb
- ┃ ┣ 📜inference_time_calc.ipynb
- ┃ ┗ 📜user_study_results_notebook.ipynb
  ┣ 📂rumour_detection_module
  ┃ ┣ 📂Process
  ┃ ┃ ┣ 📜__init__.py
@@ -65,11 +60,7 @@ The project structure is the following:
  ┃ ┗ 📜requirements.txt
  ┣ 📂testing_results
  ┃ ┣ 📜__init__.py
- ┃ ┣ 📜ablation_study_res.md
- ┃ ┣ 📜concept_drift_res.md
  ┃ ┣ 📜concept_drift_test.py
- ┃ ┣ 📜dataset_mixing_test.md
- ┃ ┗ 📜extension_latency.md
  ┣ 📜.gitignore
  ┣ 📜Dockerfile
  ┣ 📜README.md
@@ -79,7 +70,7 @@ The project structure is the following:
 
 ## Development
 ### Data
-The data used throughout this dissertation can be found at the following locations:
+The data used throughout this project can be found at the following locations:
 - https://www.dropbox.com/s/46r50ctrfa0ur1o/rumdect.zip?dl=0.
 - https://www.dropbox.com/s/7ewzdrbelpmrnxu/rumdetect2017.zip?dl=0.
 - https://drive.google.com/drive/u/0/folders/1pi71FGwfHvkuzSPtLCWL6iky1MCzexZx
@@ -184,7 +175,8 @@ docker buildx build --platform linux/amd64 -t gcr.io/project-thola/tholaserver:v
 The same tutorial mentioned above shows how one would upload the Docker image to cloud run: https://medium.com/fullstackai/how-to-deploy-a-simple-flask-app-on-cloud-run-with-cloud-endpoint-e10088170eb7
 
 ### Running Experiments
-During the dissertation, we ran a number of experiments. The relevant data generation scripts are included in `rumour_detection_module/scripts`. Additional experiment scripts and all experiment results are in `testing_results`.
+During the project, we ran a number of experiments. The relevant data generation scripts are included in `rumour_detection_module/scripts`. Additional experiment scripts are in `testing_results`.
+
 #### Out-of-Distribution Data Experiments
 To run the mixing experiments, we make use of the script in `testing_results/concept_drift_test.py`
 
@@ -240,6 +232,3 @@ where:
 - `<drop_amount>` is the amount of ablation to be used.
 
 We then use the training command for this newly created dataset as above.
-
-### Visualisations
-All of the visualisations that have been created for the purposes of this dissertation are loclated in the `notebooks` directory.
