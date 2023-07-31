@@ -1,5 +1,5 @@
 # Rumour Detection in the Wild: A Browser Extension for Twitter
-This is a repoistory containing all the materials related to the dissertaion exploring a browser extension for Google Chrome that performs rumour detection on Twitter.
+This is a repoistory containing all the materials related to the paper exploring a browser extension for Google Chrome that performs rumour detection on Twitter.
 
 The project structure is the following: 
 ```
