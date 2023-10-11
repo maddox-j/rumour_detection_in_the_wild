@@ -1,5 +1,15 @@
 # Rumour Detection in the Wild: A Browser Extension for Twitter
-This is a repoistory containing all the materials related to the paper exploring a browser extension for Google Chrome that performs rumour detection on Twitter.
+This is a repoistory containing all the materials related to the paper Rumour Detection in the Wild: A Browser Extension for Twitter accepted at NLP-OSS@EMNLP 2023. 
+```
+@inproceedings{
+jovanovic2023rumour,
+title={Rumour Detection in the Wild: A Browser Extension for Twitter},
+author={Andrej Jovanovic and Bj{\"o}rn Ross},
+booktitle={3rd Workshop for Natural Language Processing Open Source Software},
+year={2023},
+url={https://openreview.net/forum?id=9akS9IBfKs}
+}
+```
 
 The project structure is the following: 
 ```
